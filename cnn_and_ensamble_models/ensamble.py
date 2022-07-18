@@ -51,10 +51,10 @@ best_model_path = os.path.join(result_dir, "best_model")
 create_dir_if_not_exist([result_dir, summary_dir, best_model_path])
 
 # load data
-P_train = np.load("./datasets/padding0/P_Train.npy")
-N_train = np.load("./datasets/padding0/N_Train.npy")
-P_Test = np.load("./datasets/padding0/P_Test.npy")
-N_Test = np.load("./datasets/padding0/N_Test.npy")
+P_train = np.load("./../Dataset_Left_0_padding/P_Train.npy")
+N_train = np.load("./../Dataset_Left_0_padding/N_Train.npy")
+P_Test = np.load("./../Dataset_Left_0_padding/P_Test.npy")
+N_Test = np.load("./../Dataset_Left_0_padding/N_Test.npy")
 
 x_train, y_train, x_test, y_test = extract_dataset(N_train, P_train, N_Test, P_Test, sequence_length, size_encoding, context_length)
 
