@@ -84,10 +84,10 @@ print("Loading input data")
 positive = None  # positive input tensor
 negative = None  # negative input tensor
 
-P_train = np.load("./Dataset_Left_0_padding/P_Train.npy")
-N_train = np.load("./Dataset_Left_0_padding/N_Train.npy")
-P_Test = np.load("./Dataset_Left_0_padding/P_Test.npy")
-N_Test = np.load("./Dataset_Left_0_padding/N_Test.npy")
+P_train = np.load("./../Dataset_Left_0_padding/P_Train.npy")
+N_train = np.load("./../Dataset_Left_0_padding/N_Train.npy")
+P_Test = np.load("./../Dataset_Left_0_padding/P_Test.npy")
+N_Test = np.load("./../Dataset_Left_0_padding/N_Test.npy")
 
 # P_train = np.load("./dataset_splitted/seqs2datasets_N2C/Datasets/RibProf_Seqs/NL36m6M18_CL13/CodonRelaxed/Left/P_Train.npy")
 # N_train = np.load("./dataset_splitted/seqs2datasets_N2C/Datasets/RibProf_Seqs/NL36m6M18_CL13/CodonRelaxed/Left/N_Train.npy")
