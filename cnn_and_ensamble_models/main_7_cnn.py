@@ -19,9 +19,6 @@ import pandas as pd
 from keras.models import load_model
 from sklearn.model_selection import train_test_split
 
-# physical_devices = tf.config.list_physical_devices('GPU')
-# tf.config.experimental.set_memory_growth(physical_devices[0], True)
-
 # command line arguments
 run_string = "ensamble_7cnn_base"
 context_length = 18
@@ -90,14 +87,14 @@ if train_test_simple:
     predictions7 = model7.predict(x_test, batch_size=1, verbose=1)
 
             
-    predictions = np.sum([predictions1,predictions2,predictions3,predictions4,predictions5,predictions6,predictions7], axis=0) #, predictions_xgb],
+    predictions = np.sum([predictions1,predictions2,predictions3,predictions4,predictions5,predictions6,predictions7], axis=0) 
 
     ##binarize predictions and encode labels
     y_test = np.argmax(y_test, axis=1)
     predictions = np.argmax(predictions, axis=1)
 
     report = "Test on:" + str(np.shape(x_test)) + " examples \n"
-    report = report + classification_report(y_test, predictions, target_names=["lente", "veloci"])  # FIX ME potrebbero essere invertite...
+    report = report + classification_report(y_test, predictions, target_names=["lente", "veloci"])
     report = report + "\n accuracy: " + str(accuracy_score(y_test, predictions))
 
 
