@@ -25,8 +25,8 @@ core source code related to the identification of reproducible Ribo-seq profiles
 ## Machine learning analysis:
 The generated sub-sequences are analyzed through different machine learning models:
 
-- [1D-CNN](https://github.com/pandrein/Ribo-Seq-analysis/tree/main/cnn_and_ensamble_models/NetworkModels.py)
 - [MLP applied on nucleotide frequency](https://github.com/pandrein/Ribo-Seq-analysis/tree/main/mlp_model)
+- [1D-CNN](https://github.com/pandrein/Ribo-Seq-analysis/tree/main/cnn_and_ensamble_models/NetworkModels.py)
 - [Ensamble of 7 1D-CNN](https://github.com/pandrein/Ribo-Seq-analysis/tree/main/cnn_and_ensamble_models/main_7_cnn.py)
 
 
