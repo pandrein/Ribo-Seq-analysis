@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jan 25 11:21:38 2021
-
-@author: Caterina
-"""
-
-
 import os
 import numpy as np
 import tensorflow as tf
