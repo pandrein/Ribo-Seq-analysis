@@ -17,7 +17,7 @@ The analysis of the ORF-specific Ribo-seq profiles is articulated as follows:
 
 - Identification of the "significantly reproducible Ribo-seq profiles"
 
-core source code related to the identification of reproducible Ribo-seq profiles through the systematic comparison of different Ribo-seq datasets.
+[Sequence generation](https://github.com/pandrein/Ribo-Seq-analysis/tree/main/sequence_generation) core source code related to the identification of reproducible Ribo-seq profiles through the systematic comparison of different Ribo-seq datasets.
 
 ## Statistical analysis
 [Statistical analysis](https://github.com/pandrein/Ribo-Seq-analysis/tree/main/statistical_analysis) to detect the differences in the nucleotide composition between sub--sequences
